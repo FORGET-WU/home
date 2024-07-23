@@ -5,15 +5,16 @@ page = st.sidebar.radio('首页', ['关于根据地', '图片处理工具', '智
 
 def page_1():
     '''关于根据地'''
-    st.write('# :sparkles: blue[星迹]')
+    st.write('# :sparkles: :blue[星迹]')
     st.write('根据地用途：工具分享、数据收集、兴趣推荐、综合主站')
     st.write('现有模块：图片处理工具、智慧词典、留言区')
-    st.write('第五人格（魔怔')
+    st.write('-----------------------------------------------------------')
+    st.write('## :祝大家万事胜意')
     st.image('约约.jpg')
     
 def page_2():
     '''图片处理工具'''
-    st.write('# :sunglasses:图片换色程序:sunglasses')
+    st.write('# :sunglasses:图片换色程序: :sunglasses')
     uploaded_file = st.file_uploader('上传图片',type=['png','jpng','jpg'])
     if uploaded_file:
         file_name = uploaded_file.name
@@ -74,12 +75,14 @@ def page_4():
     '''自我介绍'''
     st.write('# :blue[自我介绍]')
     st.write('关于我 emm...没什么好说的')
-    st.write('第一，已自毁双目（可乐(bushi。。。）')
+    st.write('第一，已自毁双目（可乐)')
     st.write('第二，我推cp金婚：隐囚，摄殓，心患')
-    st.write('第三，约推，摄厨（非癫厨')
+    st.write('第三，约推，摄厨')
     st.write('第四，祝你推红红火火，你推cp金婚')
     st.write(':orange[第五，人格启动（撕心裂肺音]')
     st.image('美约约.jpg')
+    st.write('-----------------------------------------------------------')
+    st.write('## :许多优质的手书、音乐都能从以下三个网站中找到。')
     go = st.selectbox('选择想要跳转的网页', ['百度', '网易云音乐','哔哩哔哩'])
     if go == '百度':
         st.link_button('跳转到'+go,'https://www.baidu.com/')
